@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(1, 1, 69);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container form .fa-solid.fa-paper-plane{
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 6px rgb(0, 0,0,.7);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+}
+.container form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 70%;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.fa-circle-check{
+    font-size: 17px;
+}
+.container form .input-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    position: relative;
+}
+.container form .input-group label{
+    font-weight: 500;
+}
+.container form .input-group textarea{
+    height: 80px;
+}
+.container form .input-group textarea,.container form .input-group input{
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    width: 65%;
+    border-bottom: 1px solid #000;
+    padding: 7px;
+}
+.container form .input-group textarea:focus,.container form .input-group input:focus{
+    border-bottom: #000 2px solid;
+}
+.container form button{
+    font-family: inherit;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+.input-group span{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    color: red;
+}
+.submit-error{
+    color: red;
+}
